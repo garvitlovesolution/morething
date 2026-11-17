@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vlovsol.com/sitemap.xml

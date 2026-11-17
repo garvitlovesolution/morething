@@ -1,0 +1,3 @@
+self.addEventListener('install',function(){self.skipWaiting()});self.addEventListener('activate',function(e){e.waitUntil(clients.claim())});self.addEventListener('fetch',function(e){var r=e.request;if(r.method!='GET'||new URL(r.url).origin!=location.origin)return;e.respondWith(fetch(r).then(function(x){var c=x.clone();caches.open('mt1').then(function(k){k.put(r,c)});return x}).catch(function(){return caches.match(r)}))});
+self.addEventListener('notificationclick',function(e){e.notification.close();e.waitUntil(clients.openWindow('/#desk'))});
+self.addEventListener('push',function(e){e.waitUntil(self.registration.showNotification('MoreThing',{body:'You have a reminder due. Tap to open your desk.',icon:'/icon-192.png',badge:'/icon-192.png',tag:'mt-due'}))});
