@@ -1,0 +1,75 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.0.0",
+  "entity": {
+    "type": "individual",
+    "role": "owner",
+    "name": "Garvit Sharma",
+    "email": "velvetloom2@gmail.com",
+    "description": "I am a 16-year-old independent developer from Pathankot, Punjab, India, and an Emergent Ventures grantee. I build free, privacy-first software because everyday tools should not require uploading personal files or creating an account.",
+    "webpageUrl": {
+      "url": "https://vlovsol.com"
+    }
+  },
+  "projects": [
+    {
+      "guid": "morething",
+      "name": "MoreThing",
+      "description": "Free, private browser-based tools: 32+ PDF, image, calculator and developer tools, plus a private personal desk (renewals, warranties, autopay reminders, money ledger, streaks) that stays on the device and can be locked. Files are processed in the browser, nothing is uploaded and no account is needed. Built for India, with rupees, lakh/crore, GST, EMI and SIP built in.",
+      "webpageUrl": {
+        "url": "https://vlovsol.com"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/garvitlovesolution/morething"
+      },
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "pdf",
+        "privacy",
+        "productivity",
+        "web",
+        "tools",
+        "india",
+        "offline"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "main-channel",
+        "type": "other",
+        "address": "velvetloom2@gmail.com",
+        "description": "Please email for bank transfer details."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "morething-v1-india",
+        "status": "active",
+        "name": "MoreThing v1.0 (6 months)",
+        "description": "Rs 3,44,368 for 6 months: maintainer stipend Rs 2,40,000 (6 x Rs 40,000); security review of encrypted desk and backups Rs 50,000; accessibility fixes Rs 30,000; hosting and domain Rs 24,368. Milestones: M2 docs, contributor guide, tests. M4 WCAG 2.1 AA fixes, Hindi and Punjabi UI. M6 security review published, v1.0 release. Public progress update every quarter.",
+        "amount": 344368,
+        "currency": "INR",
+        "frequency": "one-time",
+        "channels": [
+          "main-channel"
+        ]
+      },
+      {
+        "guid": "yearly-support",
+        "status": "active",
+        "name": "Yearly support for MoreThing",
+        "description": "Rs 15,48,736/year: maintainer Rs 6,00,000; contributor and design Rs 1,80,000; security audit Rs 2,30,000; accessibility Rs 1,20,000; translation into 22 Indian and major global languages Rs 2,10,000; hosting Rs 48,736; iPhone and iPad test devices Rs 1,60,000. Milestones: Q1 audit and fixes; Q2 Apple device testing; Q3 translations; Q4 accessibility, v2.0, public report.",
+        "amount": 1548736,
+        "currency": "INR",
+        "frequency": "yearly",
+        "channels": [
+          "main-channel"
+        ]
+      }
+    ]
+  }
+}
